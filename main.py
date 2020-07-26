@@ -53,8 +53,7 @@ while 1:
 		cmd_real = cmd
 
 		print(f'cmd: {cmd}')
-
-		#
+		
 		while (prev_state_of_board == cur_state_of_board) and turn == 'comp':
 
 			cmd_temp = cmd[:]
@@ -68,7 +67,6 @@ while 1:
 				if char == 'z':
 					break
 				new_cmd = new_cmd + char
-			
 			
 			#drop down endstop
 			new_cmd = new_cmd+'z-55\n'
@@ -92,19 +90,15 @@ while 1:
 
 			cur_state_of_board = stateOfBoard()
 
-
-
 			if cur_state_of_board == prev_state_of_board:
 				cmd = cmd_real
 
-				
 			else:
 				prev_state_of_board = cur_state_of_board[:]
 				turn = 'human'
 				print("Next is human's turn.")
 				break
 	
-
 		while prev_state_of_board == cur_state_of_board and turn == 'human':
 			
 			cur_state_of_board = stateOfBoard()
