@@ -9,3 +9,5 @@ Refactored TicTacToeMaster code. Original source code https://github.com/navdees
 1. Arudino Uno
 2. CNC shield v3
 3. 3d printed Robot Arm
+4. Nema 17 stepper motor
+5. 12v powersupply
